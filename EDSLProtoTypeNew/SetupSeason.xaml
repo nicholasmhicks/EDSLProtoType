@@ -1,0 +1,40 @@
+﻿<Page x:Class="EDSLProtoTypeNew.SetupSeason"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:EDSLProtoTypeNew"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="SetupSeason">
+
+    <Grid>
+        <Grid>
+            <Button x:Name="SeasonButton" Content="Season" HorizontalAlignment="Left" Margin="10,7,0,0" VerticalAlignment="Top" Width="75" Click="SeasonButton_Click" />
+            <Button x:Name="ResultsButton" Content="Results" HorizontalAlignment="Left" Margin="10,32,0,0" VerticalAlignment="Top" Width="75" Click="ResultsButton_Click"/>
+            <Button x:Name="ReportsButton" Content="Reports" HorizontalAlignment="Left" Margin="10,57,0,0" VerticalAlignment="Top" Width="75"/>
+            <Button x:Name="ClubsButton" Content="Clubs" HorizontalAlignment="Left" Margin="10,295,0,0" VerticalAlignment="Top" Width="75"/>
+            <Button x:Name="TeamsButton" Content="Teams" HorizontalAlignment="Left" Margin="10,339,0,0" VerticalAlignment="Top" Width="75"/>
+            <Button x:Name="PlayersButton" Content="Players" HorizontalAlignment="Left" Margin="10,392,0,0" VerticalAlignment="Top" Width="75"/>
+            <Label Content="Season" HorizontalAlignment="Left" Margin="124,87,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.936,1.018"/>
+            <Label Content="Start Date" HorizontalAlignment="Left" Margin="124,110,0,0" VerticalAlignment="Top"/>
+            <Label Content="Number of Rounds" HorizontalAlignment="Left" Margin="124,130,0,0" VerticalAlignment="Top"/>
+            <TextBox HorizontalAlignment="Left" Height="23" Margin="240,87,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+            <TextBox HorizontalAlignment="Left" Height="23" Margin="240,110,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+            <TextBox HorizontalAlignment="Left" Height="23" Margin="240,133,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+            <Button Content="Select Dates" HorizontalAlignment="Left" Margin="475,87,0,0" VerticalAlignment="Top" Width="75" Click="SelectDates_Click"/>
+            <Button Content="View Dates" HorizontalAlignment="Left" Margin="475,120,0,0" VerticalAlignment="Top" Width="75" Click="ViewDates_Click"/>
+            <Button Content="Create Season" HorizontalAlignment="Left" Margin="475,176,0,0" VerticalAlignment="Top" Width="75" Click="Createseason_Click" />
+            <Label x:Name="DivisionLabel" Visibility="Hidden" Content="Division" HorizontalAlignment="Left" Margin="124,315,0,0" VerticalAlignment="Top"/>
+            <ComboBox x:Name="DivisionComboBox" Visibility="Hidden" HorizontalAlignment="Left" Margin="240,319,0,0" VerticalAlignment="Top" Width="120"/>
+            <Button x:Name="CreateDrawButton" Visibility="Hidden" Content="Create Draw" HorizontalAlignment="Left" Margin="475,321,0,0" VerticalAlignment="Top" Width="75"/>
+            <Button x:Name="ViewDrawButton" Content="View Draw" HorizontalAlignment="Left" Margin="572,321,0,0" VerticalAlignment="Top" Width="75" Visibility="Hidden" Click="ViewDraw_Click"/>
+            <Label Content="Seasons Page" HorizontalAlignment="Left" Margin="332,10,0,0" VerticalAlignment="Top" Width="117"/>
+            <ComboBox x:Name="DivisionComboBox1" Visibility="Hidden" HorizontalAlignment="Left" Margin="240,295,0,0" VerticalAlignment="Top" Width="120"/>
+            <Label x:Name="DivisionButtonLabel" Content="Division" HorizontalAlignment="Left" Margin="157,289,0,0" VerticalAlignment="Top" Visibility="Hidden"/>
+            <Button x:Name="CreateButton" Content="Create draw" HorizontalAlignment="Left" Margin="434,299,0,0" VerticalAlignment="Top" Width="75" Visibility="Hidden" Click="CreateDraw_Click"/>
+
+        </Grid>
+
+    </Grid>
+</Page>
